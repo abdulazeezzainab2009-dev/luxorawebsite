@@ -501,18 +501,384 @@ section {
 
 
 
+
+/* =========================================
+   LUXORA JEWELLERY - PHILOSOPHY SECTION
+========================================= */
+
 .about {
   background: #eee3d3;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.about .section-heading {
-  max-width: 780px;
+/* Introduction layout */
+
+.philosophy-intro {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  align-items: center;
+  gap: 75px;
+  margin-bottom: 100px;
+}
+
+.philosophy-intro-text {
+  max-width: 650px;
+}
+
+.philosophy-intro-text .eyebrow,
+.philosophy-belief .eyebrow,
+.philosophy-values .eyebrow,
+.philosophy-feature-text .eyebrow,
+.philosophy-promise .eyebrow {
+  color: var(--gold-dark);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.philosophy-intro-text h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--black);
+  margin-bottom: 28px;
+}
+
+.philosophy-intro-text p:not(.eyebrow) {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.95;
+  margin-bottom: 18px;
+}
+
+/* Introduction image */
+
+.philosophy-intro-image {
+  position: relative;
+  min-width: 0;
+}
+
+.philosophy-intro-image img {
+  display: block;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-caption {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  padding: 22px;
+  background: rgba(248, 245, 239, 0.94);
+}
+
+.image-caption span {
+  color: var(--gold-dark);
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.image-caption p {
+  margin-top: 8px;
+  color: var(--black);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+}
+
+/* What we believe */
+
+.philosophy-belief {
+  max-width: 850px;
+  margin: 0 auto 110px;
+  text-align: center;
+}
+
+.philosophy-belief h2,
+.philosophy-values .section-heading h2,
+.philosophy-feature-text h2,
+.philosophy-promise h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.philosophy-belief h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 25px;
+}
+
+.philosophy-belief p:not(.eyebrow) {
+  font-size: 16px;
+  line-height: 1.95;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+
+/* Philosophy values */
+
+.philosophy-values {
+  margin-bottom: 110px;
+}
+
+.philosophy-values .section-heading {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.philosophy-values .section-heading h2 {
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.philosophy-values .section-heading > p:last-child {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.philosophy-card {
+  background: var(--cream);
+  border: 1px solid rgba(184, 149, 85, 0.25);
+  padding: 35px 28px;
+  min-width: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(28, 28, 28, 0.07);
+}
+
+.philosophy-number {
+  display: inline-block;
+  color: var(--gold-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.philosophy-card h3 {
+  color: var(--black);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-bottom: 18px;
+}
+
+.philosophy-card p {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.philosophy-card p:last-child {
   margin-bottom: 0;
 }
 
-.about .section-heading > p:last-child {
-  font-size: 17px;
-  line-height: 1.9;
+/* Image and text feature */
+
+.philosophy-feature {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  align-items: center;
+  gap: 75px;
+  margin-bottom: 110px;
+}
+
+.philosophy-feature-image {
+  min-width: 0;
+}
+
+.philosophy-feature-image img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.philosophy-feature-text h2 {
+  font-size: clamp(32px, 3.5vw, 46px);
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.philosophy-feature-text p:not(.eyebrow) {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.95;
+  margin-bottom: 18px;
+}
+
+/* Closing promise */
+
+.philosophy-promise {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 65px 55px;
+  text-align: center;
+  background: var(--cream);
+  border: 1px solid rgba(184, 149, 85, 0.35);
+}
+
+.philosophy-promise h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.philosophy-promise p:not(.eyebrow) {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.95;
+  margin-bottom: 18px;
+}
+
+.philosophy-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 16px 28px;
+  background: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.philosophy-button:hover {
+  background: transparent;
+  color: var(--black);
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1100px) {
+  .philosophy-intro,
+  .philosophy-feature {
+    gap: 40px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .philosophy-intro-image img {
+    height: 480px;
+  }
+
+  .philosophy-feature-image img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .philosophy-intro,
+  .philosophy-feature {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-bottom: 75px;
+  }
+
+  .philosophy-intro-text h2 {
+    font-size: 38px;
+  }
+
+  .philosophy-intro-image img {
+    height: 430px;
+  }
+
+  .philosophy-belief {
+    margin-bottom: 75px;
+  }
+
+  .philosophy-values {
+    margin-bottom: 75px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .philosophy-card {
+    padding: 30px 25px;
+  }
+
+  .philosophy-feature-image img {
+    height: 400px;
+  }
+
+  .philosophy-promise {
+    padding: 45px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .philosophy-intro-text h2 {
+    font-size: 32px;
+  }
+
+  .philosophy-intro-text p:not(.eyebrow),
+  .philosophy-belief p:not(.eyebrow),
+  .philosophy-feature-text p:not(.eyebrow),
+  .philosophy-promise p:not(.eyebrow) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .philosophy-intro-image img {
+    height: 340px;
+  }
+
+  .philosophy-values .section-heading h2,
+  .philosophy-feature-text h2,
+  .philosophy-promise h2 {
+    font-size: 30px;
+  }
+
+  .philosophy-card h3 {
+    font-size: 21px;
+  }
+
+  .philosophy-feature-image img {
+    height: 330px;
+  }
+
+  .philosophy-promise {
+    padding: 35px 20px;
+  }
+
+  .philosophy-button {
+    padding: 14px 18px;
+    font-size: 10px;
+  }
 }
 
 
@@ -1044,4 +1410,564 @@ section {
   .newsletter-form button {
     width: 100%;
   }
+}
+
+/* =========================================
+   LUXORA JEWELLERY CONTACT PAGE
+========================================= */
+
+.contact-hero {
+    padding: 100px 8%;
+    text-align: center;
+    background: #f8f5ef;
+}
+
+.contact-hero .eyebrow,
+.contact-intro .eyebrow,
+.contact-details .eyebrow,
+.contact-form-text .eyebrow {
+    color: #92703b;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.contact-hero h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    font-weight: 400;
+    margin: 0 0 22px;
+}
+
+.contact-hero > p:not(.eyebrow) {
+    max-width: 680px;
+    margin: 0 auto 30px;
+    line-height: 1.9;
+    color: #555;
+}
+
+.contact-hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #1c1c1c;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    transition: background 0.3s ease;
+}
+
+.contact-hero-button:hover {
+    background: #92703b;
+}
+
+.contact-intro {
+    max-width: 850px;
+    margin: auto;
+    padding: 85px 25px 65px;
+    text-align: center;
+}
+
+.contact-intro h2,
+.contact-details-heading h2,
+.contact-form-text h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 400;
+    margin: 0 0 22px;
+}
+
+.contact-intro > p:last-child {
+    color: #666;
+    line-height: 1.9;
+}
+
+.contact-details {
+    padding: 70px 8%;
+    background: #fcfaf6;
+}
+
+.contact-details-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-card {
+    padding: 35px 25px;
+    background: #fff;
+    border: 1px solid #e8dfd0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon {
+    color: #b89555;
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+
+.contact-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.contact-card a {
+    color: #92703b;
+    text-decoration: none;
+    border-bottom: 1px solid #b89555;
+    padding-bottom: 5px;
+    font-size: 13px;
+    margin-top: auto;
+}
+
+.contact-card a:hover {
+    color: #1c1c1c;
+}
+
+.contact-form-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 65px;
+    padding: 90px 10%;
+    align-items: start;
+}
+
+.contact-form-text {
+    padding-top: 15px;
+}
+
+.contact-form-text > p:not(.eyebrow) {
+    color: #666;
+    line-height: 1.9;
+}
+
+.contact-form-text .contact-note {
+    color: #92703b;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+.luxora-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.form-group label {
+    font-size: 13px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #1c1c1c;
+    background: #fff;
+    border: 1px solid #ded6c9;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 1px solid #b89555;
+    border-color: #b89555;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-submit-button {
+    padding: 17px 25px;
+    background: #1c1c1c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: background 0.3s ease;
+}
+
+.contact-submit-button:hover {
+    background: #92703b;
+}
+
+.form-small-note {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-top: -10px;
+}
+
+/* Responsive contact page */
+
+@media (max-width: 800px) {
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 65px 7%;
+    }
+
+    .contact-hero {
+        padding: 75px 7%;
+    }
+
+    .contact-details {
+        padding: 60px 7%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-hero h1 {
+        font-size: 40px;
+    }
+
+    .contact-intro {
+        padding: 60px 7%;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+}
+
+/* =========================================
+   LUXORA JOURNAL / BLOG PAGE
+========================================= */
+
+.journal-hero {
+    background: #f8f5ef;
+    padding: 100px 8% 65px;
+    text-align: center;
+}
+
+.journal-hero .eyebrow,
+.journal-intro .eyebrow,
+.journal-featured .eyebrow,
+.journal-section-heading .eyebrow,
+.journal-full-article .eyebrow,
+.journal-closing .eyebrow {
+    color: #92703b;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.journal-hero h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0 0 25px;
+}
+
+.journal-hero > p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #5d5a55;
+    line-height: 1.9;
+}
+
+.journal-hero-button {
+    display: inline-block;
+    padding: 16px 28px;
+    background: #1c1c1c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: background 0.3s ease;
+}
+
+.journal-hero-button:hover {
+    background: #92703b;
+}
+
+.journal-hero-caption {
+    margin-top: 65px;
+    padding-top: 22px;
+    border-top: 1px solid #ded6c9;
+    color: #777067;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.journal-intro {
+    max-width: 850px;
+    margin: auto;
+    padding: 85px 25px;
+    text-align: center;
+}
+
+.journal-intro h2,
+.journal-featured-content h2,
+.journal-section-heading h2,
+.journal-closing h2 {
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.3;
+    font-weight: 400;
+    margin: 0 0 22px;
+}
+
+.journal-intro > p:last-child {
+    color: #666;
+    line-height: 1.9;
+}
+
+.journal-featured {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    background: #fcfaf6;
+    align-items: center;
+}
+
+.journal-featured-image {
+    min-height: 430px;
+    overflow: hidden;
+}
+
+.journal-featured-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+.journal-featured-content {
+    padding: 55px 10%;
+}
+
+.journal-featured-content > p:not(.eyebrow) {
+    color: #666;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+
+.journal-read-link {
+    color: #92703b;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid #b89555;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+.journal-read-link:hover {
+    color: #1c1c1c;
+}
+
+.journal-articles-section {
+    padding: 90px 8%;
+}
+
+.journal-section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.journal-section-heading > p:last-child {
+    color: #666;
+    line-height: 1.8;
+}
+
+.journal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.journal-card {
+    border: 1px solid #e8dfd0;
+    background: #fff;
+    min-width: 0;
+}
+
+.journal-card-image {
+    display: block;
+    height: 260px;
+    overflow: hidden;
+    background: #f8f5ef;
+}
+
+.journal-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.journal-card:hover .journal-card-image img {
+    transform: scale(1.04);
+}
+
+.journal-card-content {
+    padding: 28px 24px 32px;
+}
+
+.journal-category {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #92703b;
+    margin-bottom: 15px;
+}
+
+.journal-card-content h3 {
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+
+.journal-card-content > p:not(.journal-category) {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.journal-full-article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 75px 25px;
+    border-top: 1px solid #e8dfd0;
+    scroll-margin-top: 30px;
+}
+
+.journal-full-article h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 400;
+    line-height: 1.35;
+    margin: 0 0 25px;
+}
+
+.journal-full-article h3 {
+    font-size: 21px;
+    font-weight: 400;
+    margin: 30px 0 12px;
+}
+
+.journal-full-article > p:not(.eyebrow) {
+    color: #5f5b55;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.journal-back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #92703b;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+.journal-closing {
+    text-align: center;
+    padding: 85px 8%;
+    background: #f8f5ef;
+}
+
+.journal-closing > p:not(.eyebrow) {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.9;
+    color: #666;
+}
+
+/* Responsive blog layout */
+
+@media (max-width: 900px) {
+    .journal-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .journal-featured-content {
+        padding: 40px 8%;
+    }
+}
+
+@media (max-width: 650px) {
+    .journal-hero {
+        padding: 75px 7% 45px;
+    }
+
+    .journal-intro {
+        padding: 65px 7%;
+    }
+
+    .journal-featured {
+        grid-template-columns: 1fr;
+    }
+
+    .journal-featured-image,
+    .journal-featured-image img {
+        min-height: 300px;
+        max-height: 400px;
+    }
+
+    .journal-featured-content {
+        padding: 40px 7%;
+    }
+
+    .journal-articles-section {
+        padding: 65px 7%;
+    }
+
+    .journal-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .journal-card-image {
+        height: 280px;
+    }
+
+    .journal-full-article {
+        padding: 60px 7%;
+    }
+
+    .journal-closing {
+        padding: 65px 7%;
+    }
 }

@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Contact Luxora Jewellery for jewellery enquiries, orders and assistance."
+    >
+
+    <title>Contact Us | Luxora Jewellery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- HEADER: Reused from your existing website -->
+    <header class="site-header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <img
+                    src="image-folder/2-removebg-preview.png"
+                    alt="Luxora Jewellery logo"
+                >
+                <span>
+                    <span class="logo-name">LUXORA</span>
+                    <small>JEWELLERY</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop & Collections</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button type="button" aria-label="Search">⌕</button>
+                <a href="#contact-form" aria-label="Contact us">♙</a>
+                <button type="button" aria-label="Shopping cart">
+                    ♧ <span class="cart-count">0</span>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- CONTACT HERO -->
+        <section class="contact-hero">
+            <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+
+            <h1>Let's Connect</h1>
+
+            <p>
+                Every beautiful experience begins with a conversation.
+                Whether you have a question about our jewellery, need
+                assistance with an order, or simply want to say hello,
+                we're here to help.
+            </p>
+
+            <a href="#contact-details" class="contact-hero-button">
+                GET IN TOUCH
+            </a>
+        </section>
+
+
+        <!-- CONTACT INTRODUCTION -->
+        <section class="contact-intro">
+            <p class="eyebrow">THE LUXORA EXPERIENCE</p>
+
+            <h2>Here for Every Detail</h2>
+
+            <p>
+                At Luxora Jewellery, we believe choosing jewellery should
+                feel personal, enjoyable and effortless. We welcome your
+                questions and look forward to helping you discover pieces
+                that reflect your style and celebrate your special moments.
+            </p>
+        </section>
+
+
+        <!-- CONTACT DETAILS -->
+        <section class="contact-details" id="contact-details">
+
+            <div class="contact-details-heading">
+                <p class="eyebrow">CONNECT WITH LUXORA</p>
+                <h2>We're Just a Message Away</h2>
+            </div>
+
+            <div class="contact-cards">
+
+                <article class="contact-card">
+                    <span class="contact-icon">✉</span>
+                    <h3>Have a Question?</h3>
+
+                    <p>
+                        Need information about our jewellery or
+                        assistance choosing a piece? Send us a message.
+                    </p>
+
+                    <a
+                        href="https://wa.me/2348124339997"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Chat on WhatsApp
+                    </a>
+                </article>
+
+
+                <article class="contact-card">
+                    <span class="contact-icon">♡</span>
+                    <h3>Follow Our Journey</h3>
+
+                    <p>
+                        Discover jewellery inspiration, explore our
+                        style and keep up with Luxora on Instagram.
+                    </p>
+
+                    <a
+                        href="https://www.instagram.com/xieenah123/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Visit Our Instagram
+                    </a>
+                </article>
+
+
+                <article class="contact-card">
+                    <span class="contact-icon">◇</span>
+                    <h3>Need Order Assistance?</h3>
+
+                    <p>
+                        Contact us about your order or ask for help
+                        before making your next jewellery selection.
+                    </p>
+
+                    <a
+                        href="https://wa.me/2348124339997"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Get Order Assistance
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form-section" id="contact-form">
+
+            <div class="contact-form-text">
+                <p class="eyebrow">LET'S TALK</p>
+
+                <h2>Send Us a Message</h2>
+
+                <p>
+                    Have something in mind? Complete the form and
+                    continue to WhatsApp to send your enquiry directly
+                    to Luxora Jewellery.
+                </p>
+
+                <p class="contact-note">
+                    We look forward to hearing from you.
+                </p>
+            </div>
+
+
+            <form class="luxora-contact-form" id="luxora-message-form">
+
+                <div class="form-group">
+                    <label for="customer-name">Your Name</label>
+
+                    <input
+                        type="text"
+                        id="customer-name"
+                        name="customerName"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="customer-email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="customer-email"
+                        name="customerEmail"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="enquiry-type">What can we help you with?</label>
+
+                    <select id="enquiry-type" name="enquiryType" required>
+                        <option value="">Select an enquiry</option>
+                        <option value="Product enquiry">Product enquiry</option>
+                        <option value="Order assistance">Order assistance</option>
+                        <option value="Gift recommendation">Gift recommendation</option>
+                        <option value="Other question">Other question</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="customer-message">Your Message</label>
+
+                    <textarea
+                        id="customer-message"
+                        name="customerMessage"
+                        rows="5"
+                        placeholder="Tell us how we can help..."
+                        required
+                    ></textarea>
+                </div>
+
+
+                <button type="submit" class="contact-submit-button">
+                    Continue to WhatsApp
+                </button>
+
+                <p class="form-small-note">
+                    Your message will open in WhatsApp for you to send.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER: Reused from your existing website -->
+    <footer class="site-footer" id="footer-contact">
+
+        <div class="footer-brand">
+            <a href="index.html" class="logo">◇ LUXORA</a>
+            <p>Designed to shine, made to last.</p>
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+
+            <a
+                href="https://www.instagram.com/xieenah123/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+        </div>
+
+        <div class="newsletter">
+            <h3>Our Newsletter</h3>
+            <p>Get updates and exclusive offers.</p>
+
+            <form class="newsletter-form">
+                <label for="newsletter-email">
+                    Your email address
+                </label>
+
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="luxora-contact">
+            <h3>Connect With Us</h3>
+
+            <a
+                href="https://wa.me/2348124339997"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                WhatsApp Us
+            </a>
+
+            <a
+                href="https://www.instagram.com/xieenah123/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Follow Us on Instagram
+            </a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Luxora Jewellery. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="index.js"></script>
+
+    
+
+</body>
+</html>
